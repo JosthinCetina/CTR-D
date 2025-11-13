@@ -44,7 +44,7 @@ Kp_prime = Kp_cont;
 Ki_prime = Ki_cont * Ts; % Ganancia integral se multiplica por Ts
 Kd_prime = Kd_cont / Ts; % Ganancia derivativa se divide por Ts
 
-%% Visualización del D-PID:
+%% Visualización del D-PID - Correlación PID vs. D-PID:
 
 try
     [mag_s, ~, w_s] = bode(Gc_s, {1e2, 1e7});
